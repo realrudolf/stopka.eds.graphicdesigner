@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @font-face {
+      font-family: 'HelveticaNeueLTProBold';
+      src: url('fonts/HelveticaNeueLTProBd.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: 'HelveticaNeueLTProRegular';
+      src: url('fonts/HelveticaNeueLTProRoman.woff2') format('woff2');
+    }
+
+    body {
+      font-family: 'HelveticaNeueLTProRegular', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .email-signature {
+      width: 600px;
+      height: 150px;
+      display: flex;
+      position: relative;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .content {
+      width: 60%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .logo-container {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .shape-svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: auto;
+    }
+
+    .logo-svg {
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      height: 105%;
+      width: auto;
+      z-index: 1;
+    }
+
+    .position-title {
+      font-size: 12px;
+      font-family: 'HelveticaNeueLTProBold';
+      font-weight: bold;
+      margin-bottom: 22px;
+      margin-top: 15px;
+    }
+
+    .info-container {
+      display: flex;
+      justify-content: flex-start;
+      gap: 5px;
+    }
+
+    .address, .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .address p, .contact p, .company-name {
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .address {
+      width: calc(50% - 10px);
+    }
+
+    .contact {
+      width: calc(50% - 10px);
+    }
+
+    .company-name {
+      font-family: 'HelveticaNeueLTProBold';
+      font-weight: bold;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover, .social-icons a:hover {
+      color: #cc0033; /* Kolor ikon po najechaniu */
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      color: #cc0033;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .contact-info i {
+      color: #cc0033;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-signature">
+    <div class="content">
+      <p class="position-title">GRAPHIC DESIGNER</p>
+      <div class="info-container">
+        <div class="address">
+          <p class="company-name">Egurrola Dance Studio</p>
+          <p>ul. Żwirki i Wigury 99a<br>02-089 Warszawa</p>
+        </div>
+        <div class="contact">
+          <p class="contact-info"><i class="fas fa-phone-alt"></i> 123 45 67 89</p> <!-- Dodatkowy numer -->
+          <p class="contact-info"><i class="fas fa-phone-alt"></i> 601 20 20 20</p> <!-- Numer infolinii -->
+          <p class="contact-info"><i class="fas fa-globe"></i> <a href="https://egurrola.com">egurrola.com</a></p>
+        </div>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com/egurroladancestudio" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/egurroladance" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/egurroladancestudio" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/company/egurrola-dance-studio" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com/egurroladancestudio" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="logo-container">
+      <img src="images/kształt stopka.svg" class="shape-svg" alt="Tło logo">
+      <img src="images/eds_logo_podstawowe_inwersyjne_RGB.svg" class="logo-svg" alt="Logo Egurrola Dance Studio">
+    </div>
+  </div>
+</body>
+</html>
